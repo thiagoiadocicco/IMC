@@ -1,0 +1,17 @@
+const nome = 'Carlos'
+const peso = 84
+const altura = 1.88
+
+imc = peso / (altura * altura)
+
+const calcIMC = function(nome, peso, altura){
+    const imc = peso / (altura * altura)
+    console.log(nome, 'seu imc cauculado é', imc,'.')
+}
+
+calcIMC('Carlos', 84, 1.88)
+
+if(imc >= 30)
+console.log('Carlos você esta acima do peso')
+else if(imc <= 29.9)
+console.log('Carlos você não esta acima do peso')
